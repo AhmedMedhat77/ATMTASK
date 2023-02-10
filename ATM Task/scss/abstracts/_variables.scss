@@ -1,0 +1,64 @@
+$--color-blue-1: var(--color-blue-1, red);
+$--color-blue-2: var(--color-blue-2, red);
+$--color-yellow-1: var(--color-yellow-1, red);
+$--color-red-1: var(--color-red-1, red);
+$--color-gray-1: var(--color-gray-1, red);
+$--color-gray-2: var(--color-gray-2, red);
+$--color-gray-3: var(--color-gray-3, red);
+$--color-gray-4: var(--color-gray-4, red);
+$--color-black-1: var(--color-black-1, red);
+$--color-black-2: var(--color-black-2, red);
+$--color-black-3: var(--color-black-3, red);
+$--color-black-4: var(--color-black-4, red);
+$--color-white-1: var(--color-white-1, red);
+$--color-white-2: var(--color-white-2, red);
+
+// border radius
+$--border-radius-xs: 2.1rem;
+$--border-radius-s: 2.4rem;
+$--border-radius-m: 3rem;
+$--border-radius-lg: 3.3rem;
+
+// root
+:root {
+  --color-blue-1: #556ae2;
+  --color-blue-2: #7885d2;
+  --color-yellow-1: #fdc82f;
+  --color-red-1: #d52b1e;
+  --color-gray-1: #434242;
+  --color-gray-2: #757576;
+  --color-gray-3: #707070;
+  --color-gray-4: #a7a5a5;
+  --color-black-1: #141414;
+  --color-black-2: #3c3a3a;
+  --color-black-3: #434242;
+  --color-black-4: #393939;
+  --color-white-1: #fff;
+  --color-white-2: #f8f8f8;
+}
+// deviders
+.divider {
+  border-top: 1px solid $--color-gray-3;
+}
+.left-devider {
+  border-left: 1px solid $--color-gray-4;
+  height: 5.9rem;
+  padding-left: 1rem;
+}
+// menue
+.value {
+  @extend .text--small-4;
+  color: $--color-blue-1;
+  background: $--color-white-2;
+  border-radius: $--border-radius-xs;
+  @extend .text--bold;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-transition {
+  transition: all ease-in-out 0.4s;
+}

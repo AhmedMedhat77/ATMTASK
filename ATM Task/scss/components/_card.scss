@@ -1,0 +1,33 @@
+.card {
+  background-color: $--color-white-2;
+  color: $--color-black-3;
+
+  @extend .app-transition;
+  max-width: 19.5rem;
+  //   height: 11.6rem;
+  border-radius: 1rem;
+
+  &__img {
+    & img {
+      width: 100%;
+    }
+    width: 100%;
+    // height: 116px;
+  }
+  &__title {
+    @extend .flex-center;
+    padding-top: 1.1rem;
+    padding-bottom: 2.3rem;
+
+    &__text {
+      @extend .text--large;
+      @extend .text--semi-bold;
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+
+    background: $--color-blue-1;
+    color: $--color-white-1;
+  }
+}

@@ -1,0 +1,23 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600&display=swap");
+
+// abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// base
+@import "base/reset";
+@import "base/typography";
+
+// components
+@import "components/button";
+@import "components/card";
+// layouts
+@import "layouts/footer";
+@import "layouts/sidebar";
+@import "layouts/header";
+@import "layouts/orderMenu";
+@import "layouts/table";
+@import "layouts/summury";
+// pages
+@import "pages/listing";

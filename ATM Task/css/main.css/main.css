@@ -1,0 +1,350 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600&display=swap");
+:root {
+  --color-blue-1: #556ae2;
+  --color-blue-2: #7885d2;
+  --color-yellow-1: #fdc82f;
+  --color-red-1: #d52b1e;
+  --color-gray-1: #434242;
+  --color-gray-2: #757576;
+  --color-gray-3: #707070;
+  --color-gray-4: #a7a5a5;
+  --color-black-1: #141414;
+  --color-black-2: #3c3a3a;
+  --color-black-3: #434242;
+  --color-black-4: #393939;
+  --color-white-1: #fff;
+  --color-white-2: #f8f8f8; }
+
+.divider {
+  border-top: 1px solid var(--color-gray-3, red); }
+
+.left-devider {
+  border-left: 1px solid var(--color-gray-4, red);
+  height: 5.9rem;
+  padding-left: 1rem; }
+
+.value, .listing-left-section__information__info__value {
+  color: var(--color-blue-1, red);
+  background: var(--color-white-2, red);
+  border-radius: 2.1rem; }
+
+.flex-center, .button, .button--rounded-f, .button--lg, .card__title, .sidebar__close-btn, .order-menu, .summury__header__cell, .summury__row__cell, .listing-right-section__card-list__item, .listing-left-section__information__info, .listing-left-section__list, .listing-left-section__summary-container, .listing-left-section__action-list {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.app-transition, .card, .sidebar, .sidebar__close-btn {
+  transition: all ease-in-out 0.4s; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: var(--color-white-2, red);
+  height: 100vh;
+  min-width: max-content; }
+
+.scroll::-webkit-scrollbar, .listing-right-section__card-list::-webkit-scrollbar, .listing-left-section__table::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 6px; }
+
+.scroll::-webkit-scrollbar-thumb, .listing-right-section__card-list::-webkit-scrollbar-thumb, .listing-left-section__table::-webkit-scrollbar-thumb {
+  background-color: var(--color-blue-1, red); }
+
+.text--large, .card__title__text {
+  font: normal normal 21px/39px "Cairo"; }
+
+.text--meduim, .sidebar__list__item__text {
+  font: normal normal 20px/37px "Cairo"; }
+
+.text--small-1, .button--s, .header__title, .header__link, .table__header, .table__row__cell, .summury__header__cell, .summury__row__cell, .listing-left-section__information__info__data {
+  font: normal normal 17px/32px "Cairo"; }
+
+.text--small-2, .button--lg {
+  font: normal normal 20px/37px "Cairo"; }
+
+.text--small-3 {
+  font: normal normal 16px/32px "Cairo"; }
+
+.text--small-4, .value, .listing-left-section__information__info__value, .header__profile__text {
+  font: normal normal 16px/30px "Cairo"; }
+
+.text--small-5 {
+  font: normal normal 15px/29px "Cairo"; }
+
+.text--bold, .value, .listing-left-section__information__info__value, .sidebar__list__item__text, .table__header, .table__row__cell, .summury__header__cell, .summury__row__cell {
+  font-weight: bold; }
+
+.text--semi-bold, .button--s, .button--lg, .button--xl, .card__title__text, .header__title, .header__link, .header__profile__text {
+  font-weight: 600; }
+
+.text--regular {
+  font-weight: normal; }
+
+.button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  white-space: nowrap; }
+  .button--xl .button__text {
+    padding-right: 1.2rem; }
+  .button--rounded-f {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    background: var(--color-white-1, red); }
+  .button--s {
+    padding: 0 2.5rem; }
+  .button--lg {
+    padding: 0.4rem 5.3rem; }
+  .button--xl {
+    padding: 1.2rem 5.9rem; }
+  .button--rounded-s {
+    border-radius: 2.4rem; }
+  .button--rounded-lg {
+    border-radius: 3.3rem; }
+  .button.active--red {
+    background-color: var(--color-red-1, red);
+    color: var(--color-white-1, red); }
+  .button.active--yellow {
+    background-color: var(--color-yellow-1, red);
+    color: var(--color-white-1, red); }
+  .button.active--blue {
+    background-color: var(--color-blue-1, red);
+    color: var(--color-white-1, red); }
+  .button.active--gray2 {
+    background-color: var(--color-gray-2, red);
+    color: var(--color-white-1, red); }
+  .button.active--transparent {
+    color: var(--color-blue-1, red);
+    background: transparent;
+    border: 1px solid var(--color-gray-3, red); }
+  .button.active--transparent-2 {
+    color: var(--color-gray-2, red);
+    background: transparent; }
+  .button--shadow {
+    box-shadow: 0px 3px 20px #00000033; }
+
+.card {
+  background-color: var(--color-white-2, red);
+  color: var(--color-black-3, red);
+  max-width: 19.5rem;
+  border-radius: 1rem; }
+  .card__img {
+    width: 100%; }
+    .card__img img {
+      width: 100%; }
+  .card__title {
+    padding-top: 1.1rem;
+    padding-bottom: 2.3rem; }
+  .card:hover {
+    transform: scale(1.1);
+    background: var(--color-blue-1, red);
+    color: var(--color-white-1, red); }
+
+.sidebar {
+  background-color: var(--color-blue-1, red);
+  min-width: 27.9rem;
+  height: 100%; }
+  .sidebar.active {
+    min-width: 9.1rem;
+    overflow: hidden; }
+    .sidebar.active .sidebar__list__item__text {
+      display: none; }
+    .sidebar.active .sidebar__close-btn {
+      right: 6.5rem;
+      transform: rotate(180deg); }
+  .sidebar__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.2rem; }
+  .sidebar__list {
+    cursor: pointer;
+    padding-top: 6.8rem;
+    padding: 0 1.2rem 0 1.4rem; }
+    .sidebar__list__item {
+      white-space: nowrap;
+      margin-top: 5.2rem;
+      display: flex;
+      align-items: center;
+      padding: 1.1rem 2.1rem 1.1rem 2.6rem;
+      border-radius: 3rem;
+      color: var(--color-white-1, red); }
+      .sidebar__list__item:hover {
+        background-color: var(--color-blue-2, red); }
+      .sidebar__list__item.active {
+        background-color: var(--color-yellow-1, red);
+        color: var(--color-white-1, red); }
+      .sidebar__list__item__text {
+        padding-right: 1.9rem;
+        color: var(--color-white-1, red); }
+      .sidebar__list__item__icon {
+        color: var(--color-white-1, red); }
+  .sidebar__close-btn {
+    position: absolute;
+    top: 50%;
+    right: 25.5rem; }
+  .sidebar__icon {
+    width: 1.35rem;
+    height: 2.362rem; }
+
+.header {
+  height: 7.3rem;
+  width: 100%;
+  background: var(--color-white-1, red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__title {
+    padding-right: 11.3rem;
+    color: var(--color-gray-1, red); }
+  .header__link {
+    color: var(--color-gray-4, red); }
+  .header__profile {
+    padding-left: 9.4rem;
+    display: flex;
+    align-items: center; }
+    .header__profile__img {
+      width: 4.4rem;
+      height: 4.4rem;
+      border-radius: 50%;
+      margin-right: 1.3rem; }
+      .header__profile__img img {
+        width: 100%; }
+    .header__profile__text {
+      color: var(--color-blue-1, red); }
+    .header__profile__icon {
+      padding-right: 0.6rem;
+      width: 1.2rem;
+      height: 0.7rem; }
+
+.order-menu {
+  background-color: var(--color-white-1, red);
+  height: 10.6rem;
+  padding: 2.8rem 0; }
+  .order-menu-contiainer {
+    padding-top: 2.2rem; }
+  .order-menu__list {
+    display: flex;
+    white-space: nowrap; }
+    .order-menu__list__item {
+      padding-right: 1.6rem; }
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center; }
+  .table__header {
+    color: var(--color-black-4, red);
+    background-color: var(--color-gray-4, red);
+    white-space: nowrap; }
+    .table__header__cell {
+      border: 2px solid var(--color-gray-4, red);
+      padding: 1rem 0;
+      height: 1.1rem; }
+  .table__row__cell {
+    height: 5.8rem;
+    border: 2px solid var(--color-gray-4, red); }
+
+.summury__header {
+  display: flex; }
+  .summury__header__cell {
+    width: 13.8rem;
+    border: 1px solid var(--color-gray-4, red);
+    background-color: var(--color-blue-1, red);
+    color: var(--color-white-1, red);
+    padding: 0.8rem 0; }
+
+.summury__row {
+  display: flex; }
+  .summury__row__cell {
+    width: 13.8rem;
+    color: var(--color-black-1, red);
+    padding: 0.8rem 0;
+    border: 1px solid var(--color-gray-4, red); }
+    .summury__row__cell--yellow {
+      background-color: var(--color-yellow-1, red);
+      color: var(--color-white-1, red); }
+
+.listing {
+  display: flex;
+  height: 100vh; }
+  .listing__content {
+    margin-right: 3.1rem;
+    margin-left: 3.1rem; }
+  .listing-section {
+    width: 100%; }
+  .listing-right-section {
+    background-color: var(--color-white-1, red);
+    padding: 0 3.1rem 2.2rem 3.1rem;
+    width: 70.9rem; }
+    .listing-right-section-container {
+      padding-top: 4.5rem;
+      padding-right: 3.7rem; }
+    .listing-right-section__menu-list {
+      padding-top: 4.5rem;
+      padding-bottom: 0.9rem;
+      display: flex; }
+    .listing-right-section__card-list {
+      height: 44.8rem;
+      align-content: flex-start;
+      overflow-y: scroll;
+      overflow-x: none;
+      padding-top: 2.675rem;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding-right: 3.1rem; }
+      .listing-right-section__card-list__item {
+        padding-top: 2.2rem;
+        padding-right: 0.2rem; }
+  .listing-left-section {
+    background-color: var(--color-white-1, red);
+    margin-left: 3rem; }
+    .listing-left-section-container {
+      padding-top: 4.5rem;
+      padding-right: 0.4rem; }
+    .listing-left-section__information {
+      padding-top: 2.5rem;
+      padding-left: 1.1rem;
+      display: flex; }
+      .listing-left-section__information__info {
+        padding-right: 1rem; }
+        .listing-left-section__information__info__data {
+          white-space: nowrap;
+          color: var(--color-gray-2, red);
+          padding-left: 1.1rem; }
+        .listing-left-section__information__info__value {
+          white-space: nowrap;
+          width: max-content;
+          padding-right: 1.7rem;
+          padding-bottom: 0.4rem;
+          padding-left: 1.7rem; }
+    .listing-left-section__list {
+      padding-top: 5.4rem; }
+      .listing-left-section__list__item {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem; }
+    .listing-left-section__table {
+      margin-top: 7.2rem;
+      padding-right: 3.4rem;
+      height: 26.9rem;
+      overflow-y: scroll;
+      overflow-x: none; }
+    .listing-left-section__summary {
+      width: 54.6rem;
+      padding-top: 3.5rem; }
+    .listing-left-section__action-list {
+      padding-top: 6.4rem; }
+      .listing-left-section__action-list__item {
+        padding: 1.5rem 0.3rem; }

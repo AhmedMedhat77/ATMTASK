@@ -1,0 +1,31 @@
+.summury {
+  &__header {
+    display: flex;
+    &__cell {
+      @extend .flex-center;
+      @extend .text--small-1;
+      @extend .text--bold;
+      width: 13.8rem;
+      border: 1px solid $--color-gray-4;
+      background-color: $--color-blue-1;
+      color: $--color-white-1;
+      padding: 0.8rem 0;
+    }
+  }
+  &__row {
+    display: flex;
+    &__cell {
+      @extend .flex-center;
+      @extend .text--small-1;
+      @extend .text--bold;
+      width: 13.8rem;
+      color: $--color-black-1;
+      padding: 0.8rem 0;
+      border: 1px solid $--color-gray-4;
+      &--yellow {
+        background-color: $--color-yellow-1;
+        color: $--color-white-1;
+      }
+    }
+  }
+}

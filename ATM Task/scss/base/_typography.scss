@@ -1,0 +1,32 @@
+.text {
+  &--large {
+    font: normal normal 21px/39px "Cairo";
+  }
+  &--meduim {
+    font: normal normal 20px/37px "Cairo";
+  }
+  &--small-1 {
+    font: normal normal 17px/32px "Cairo";
+  }
+  &--small-2 {
+    font: normal normal 20px/37px "Cairo";
+  }
+  &--small-3 {
+    font: normal normal 16px/32px "Cairo";
+  }
+  &--small-4 {
+    font: normal normal 16px/30px "Cairo";
+  }
+  &--small-5 {
+    font: normal normal 15px/29px "Cairo";
+  }
+  &--bold {
+    font-weight: bold;
+  }
+  &--semi-bold {
+    font-weight: 600;
+  }
+  &--regular {
+    font-weight: normal;
+  }
+}

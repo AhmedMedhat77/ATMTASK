@@ -1,0 +1,27 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+
+  &__header {
+    @extend .text--small-1;
+    @extend .text--bold;
+    color: $--color-black-4;
+    background-color: $--color-gray-4;
+
+    white-space: nowrap;
+    &__cell {
+      border: 2px solid $--color-gray-4;
+      padding: 1rem 0;
+      height: 1.1rem;
+    }
+  }
+  &__row {
+    &__cell {
+      height: 5.8rem;
+      border: 2px solid $--color-gray-4;
+      @extend .text--small-1;
+      @extend .text--bold;
+    }
+  }
+}

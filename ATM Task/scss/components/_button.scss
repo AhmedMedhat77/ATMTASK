@@ -1,0 +1,71 @@
+.button {
+  @extend .flex-center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  &--xl &__text {
+    padding-right: 1.2rem;
+  }
+  //   &--lg &__icons {
+  //   }
+  &--rounded-f {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    background: $--color-white-1;
+    @extend .flex-center;
+  }
+  &--s {
+    padding: 0 2.5rem;
+    @extend .text--small-1;
+    @extend .text--semi-bold;
+  }
+  &--lg {
+    padding: 0.4rem 5.3rem;
+    @extend .text--small-2;
+    @extend .text--semi-bold;
+    @extend .flex-center;
+  }
+  &--xl {
+    padding: 1.2rem 5.9rem;
+    @extend .text--semi-bold;
+  }
+  &--rounded-s {
+    border-radius: $--border-radius-s;
+  }
+  &--rounded-lg {
+    border-radius: $--border-radius-lg;
+  }
+
+  &.active {
+    &--red {
+      background-color: $--color-red-1;
+      color: $--color-white-1;
+    }
+    &--yellow {
+      background-color: $--color-yellow-1;
+      color: $--color-white-1;
+    }
+    &--blue {
+      background-color: $--color-blue-1;
+      color: $--color-white-1;
+    }
+    &--gray2 {
+      background-color: $--color-gray-2;
+      color: $--color-white-1;
+    }
+    &--transparent {
+      color: $--color-blue-1;
+      background: transparent;
+      border: 1px solid $--color-gray-3;
+    }
+    &--transparent-2 {
+      color: $--color-gray-2;
+      background: transparent;
+    }
+  }
+  &--shadow {
+    box-shadow: 0px 3px 20px #00000033;
+  }
+}

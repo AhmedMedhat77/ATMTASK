@@ -1,0 +1,109 @@
+.listing {
+  display: flex;
+  height: 100vh;
+  &__content {
+    margin-right: 3.1rem;
+    margin-left: 3.1rem;
+  }
+  &-section {
+    width: 100%;
+  }
+  &-right-section {
+    background-color: $--color-white-1;
+    padding: 0 3.1rem 2.2rem 3.1rem;
+
+    width: 70.9rem;
+    &-container {
+      padding-top: 4.5rem;
+      padding-right: 3.7rem;
+    }
+
+    &__menu-list {
+      padding-top: 4.5rem;
+      padding-bottom: 0.9rem;
+      display: flex;
+      // &__item {
+      //   // todo add paddings
+      // }
+    }
+    &__card-list {
+      @extend .scroll;
+      height: 44.8rem;
+      align-content: flex-start;
+      overflow-y: scroll;
+      overflow-x: none;
+      padding-top: 2.675rem;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding-right: 3.1rem;
+      &__item {
+        @extend .flex-center;
+        padding-top: 2.2rem;
+        padding-right: 0.2rem;
+      }
+    }
+  }
+  &-left-section {
+    background-color: $--color-white-1;
+    margin-left: 3rem;
+    &-container {
+      padding-top: 4.5rem;
+      padding-right: 0.4rem;
+    }
+    &__information {
+      padding-top: 2.5rem;
+      padding-left: 1.1rem;
+      display: flex;
+      &__info {
+        @extend .flex-center;
+        padding-right: 1rem;
+
+        &__data {
+          @extend .text--small-1;
+          white-space: nowrap;
+          color: $--color-gray-2;
+          padding-left: 1.1rem;
+        }
+        &__value {
+          @extend .value;
+          white-space: nowrap;
+          width: max-content;
+          padding-right: 1.7rem;
+          padding-bottom: 0.4rem;
+          padding-left: 1.7rem;
+        }
+      }
+    }
+    &__list {
+      @extend .flex-center;
+      padding-top: 5.4rem;
+      &__item {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+      }
+    }
+    &__table {
+      margin-top: 7.2rem;
+      padding-right: 3.4rem;
+      height: 26.9rem;
+      overflow-y: scroll;
+      overflow-x: none;
+      @extend .scroll;
+    }
+    &__summary {
+      width: 54.6rem;
+      padding-top: 3.5rem;
+      &-container {
+        @extend .flex-center;
+      }
+    }
+    &__action-list {
+      padding-top: 6.4rem;
+      @extend .flex-center;
+      &__item {
+        padding: 1.5rem 0.3rem;
+      }
+    }
+  }
+}

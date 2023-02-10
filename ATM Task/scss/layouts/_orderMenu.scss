@@ -1,0 +1,17 @@
+.order-menu {
+  &-contiainer {
+    padding-top: 2.2rem;
+  }
+  background-color: $--color-white-1;
+  height: 10.6rem;
+  padding: 2.8rem 0;
+  @extend .flex-center;
+
+  &__list {
+    display: flex;
+    white-space: nowrap;
+    &__item {
+      padding-right: 1.6rem;
+    }
+  }
+}
